@@ -1,0 +1,99 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontimport.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="#">dan's yard</a><div class="pulsing-circle pulse"> </div></div>
+      <div class="menu-toggle">
+        <p class="" id="menu-open">menu</p>
+        <p class="" id="menu-close">close</p>
+      </div>
+    </nav>
+
+    <div class="menu-overlay">
+      <div class="menu-content">
+        <div class="menu-items">
+          <div class="col-lg">
+            <div class="menu-preview-img"><img src="./assets/img-1.webp" alt="" /></div>
+          </div>
+          <div class="col-sm">
+            <div class="menu-links">
+              <div class="link">
+                <a href="#" data-img="./assets/img-1.webp">music</a>
+              </div>
+              <div class="link">
+                <a href="#" data-img="./assets/img-2.webp">design</a>
+              </div>
+              <div class="link">
+                <a href="#" data-img="./assets/img-3.webp">web-dev</a>
+              </div>
+              <div class="link">
+                <a href="#" data-img="./assets/img-4.webp">contact</a>
+              </div>
+            </div>
+            <div class="menu-socials">
+              <div class="social"><a href="#">instagram</a></div>
+              <div class="social"><a href="#">behance</a></div>
+              <div class="social"><a href="#">bandcamp</a></div>
+              <div class="social"><a href="#">streaming</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <div class="col-lg">
+            <a href="#">wwmkeith</a>
+          </div>
+          <div class="col-sm">
+            <a href="#">origin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="hero">
+        <div class="hero-img">
+          <img src="./assets/img-1.webp" alt="" />
+          
+        </div>
+        <div class="hero-text">
+        <h1>hi, i'm daniel, <br>welcome to my yard.</h1>
+        <p style="padding: 1rem" class="hero-typedjs">
+          <span id="auto-type"></span>
+        </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Typed.JS script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#auto-type", {
+        strings: [
+          "i'm a multi-disciplinary kid",
+          "music producer",
+          "singer",
+          "developper",
+          "designer",
+          "i'm a 'ai art' hater",
+          "you can also call me keith !",
+        ],
+        typeSpeed: 40,
+        backSpeed: 20,
+        loop: true,
+      });
+    </script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/gsap.min.js"></script>
+
+    
+  </body>
+</html>
